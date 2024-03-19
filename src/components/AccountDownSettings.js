@@ -37,7 +37,7 @@ export default function AccountDownSettings() {
                 <div className="setting-button text-[#686B6E] text-xl">
                     <IoSettingsOutline />
                 </div>
-
+ 
             </div>
         </div>
     )
