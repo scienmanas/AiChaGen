@@ -14,13 +14,13 @@ export default function AccountDownSettings() {
         <div className='account w-full'>
             <div className="account-card px-3 py-5 cursor-pointer bg-transparent bg-gradient-to-br from-slate-700 to-gray-950 rounded-xl shadow-sm shadow-slate-600  flex flex-row justify-between items-center">
                 <div className="account-button flex flex-row items-center gap-2">
-                    <div className="photo">
+                    <div className="photo relative">
                         <img
                             className='w-[40px] h-[40px] rounded-xl'
                             src={userImage} alt=""
                         />
-                        <div className="onlinestatus ">
-                            <div className={`w-3 h-3 rounded-full ${isOnline ? 'bg-[#00FF00]' : 'bg-[#FF0000]'} `}> </div>
+                        <div className="onlinestatus absolute top-0 right-0">
+                            <div className={`w-[10px] h-[10px] rounded-full ${isOnline ? 'bg-[#00FF00]' : 'bg-[#FF0000]'} `}> </div>
                         </div>
 
                     </div>

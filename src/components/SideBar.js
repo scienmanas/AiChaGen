@@ -1,15 +1,15 @@
 import React from 'react'
-import AccountProject from './AccountProject'
+import Team from './Team'
 import General from './General'
 import Projects from './Projects'
-import AccountDownSettings from './AccountDownSettings'
+import Account from './Account'
 
 export default function SideBar() {
     return (
-        <div className='side-bar min-h-screen bg-[#131619] flex flex-col justify-between py-4 pl-2 pr-6 '>
-            <div className="top-items flex flex-col gap-7">
+        <div className='side-bar min-h-screen bg-[#131619] flex flex-col justify-between py-4 pl-2 pr-7'>
+            <div className="top-items flex flex-col gap-8">
                 <div className="project-setting">
-                    <AccountProject />
+                    <Team />
                 </div>
                 <div className="general">
                     < General />
@@ -21,7 +21,7 @@ export default function SideBar() {
             </div>
             <div className="down-items">
                 <div className="account-settings">
-                    < AccountDownSettings />
+                    < Account />
                 </div>
             </div>
         </div>

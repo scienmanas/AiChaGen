@@ -16,16 +16,24 @@ export default function Projects() {
         ["Orbital Oddysey", greenSquare], 
         ["Digital Production Launch", redTriangle ],
         ["Brand Refresh", orangeSquare ],
-        ["Social Medai Strategy", blueOctagon]
+        ["Social Medai Strategy", blueOctagon],
+        ["Orbital Oddysey", greenSquare], 
+        ["Digital Production Launch", redTriangle ],
+        ["Brand Refresh", orangeSquare ],
+        ["Social Medai Strategy", blueOctagon],
+        ["Orbital Oddysey", greenSquare], 
+        ["Digital Production Launch", redTriangle ],
+        ["Brand Refresh", orangeSquare ],
+        ["Social Medai Strategy", blueOctagon],
     ])
 
 
     return (
-        <div className='project-list flex flex-col gap-4'>
+        <div className='project-list flex flex-col gap-4' >
             <div className="heading text-[#686B6E]">
                 <h2>Projects</h2>
             </div>
-            <div className="project-list text-[#E8E9E9]">
+            <div className="project-list text-[#E8E9E9]" style={{ maxHeight: '300px', overflowY: 'auto' }}>
                 <ul>
                     {projects.map((project, index) => (
                         <li
