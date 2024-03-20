@@ -5,16 +5,14 @@ import sendMessage from '../assets/icons/send_message.png';
 
 export default function Chat() {
     return (
-        <div className='chat-section flex flex-row w-full'>
+        <div className='chat-section flex flex-row items-center bg-[#0D0F10] m-3 rounded-2xl p-3'>
             <div className="mic-button">
                 <IoMicOutline />
             </div>
             <div className="text-area-to-chat">
                 <textarea
-                    placeholder='Type a message...'
-                    name=""
-                    id=""
-                    className=''
+                    id="chat-input"
+                    class="h-24 w-full resize-none px-3 py-2 bg-[#0D0F10]"
                 />
             </div>
             <div className="attachment-area">
