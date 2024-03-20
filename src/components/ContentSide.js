@@ -25,7 +25,7 @@ export default function ContentSide() {
   }
 
   return (
-    <div className='content-side bg-[#0D0F10] h-fit w-full p-2 flex flex-col gap-7'>
+    <div className='m-3 rounded-xl  content-side bg-[#0D0F10] h-fit  pt-2 flex flex-col gap-7'>
       <div className="project-info p-4 flex flex-row items-center justify-between">
         <div className="info flex flex-col p-2">
           <div className="project-name h-[32px] text-white font-bold select-none">
@@ -54,7 +54,7 @@ export default function ContentSide() {
       </div>
       <div className="action-type flex flex-row items-center gap-6 text-white">
         <div
-          className="artificium flex flex-col items-center gap-4 px-3 py-3 group cursor-pointer bg-transparent bg-gradient-to-tr  hover:from-[#0D0F10] hover:to-gray-700 duration-150 rounded-lg"
+          className="artificium flex flex-col items-center gap-4 group cursor-pointer "
           onClick={() => handleTool("artificium")}
         >
           <div className="text-contents flex flex-row items-center gap-[9px]">
@@ -74,7 +74,7 @@ export default function ContentSide() {
           </div>
         </div>
         <div
-          className="chat flex flex-col items-center gap-4 px-3 py-3 group cursor-pointer bg-transparent bg-gradient-to-tr  hover:from-[#0D0F10] hover:to-gray-700 duration-150 rounded-lg"
+          className="chat flex flex-col items-center gap-4 group cursor-pointer"
           onClick={() => handleTool("chat")}
         >
           <div className="text-contents flex flex-row items-center gap-[9px]">
@@ -94,7 +94,7 @@ export default function ContentSide() {
           </div>
         </div>
         <div
-          className="library flex flex-col items-center gap-4 px-3 py-3 group cursor-pointer bg-transparent bg-gradient-to-tr  hover:from-[#0D0F10] hover:to-gray-700 duration-150 rounded-lg"
+          className="library flex flex-col items-center gap-4  group cursor-pointer"
           onClick={() => handleTool("library")}
         >
           <div className="text-content flex flex-row items-center gap-[9px]">
