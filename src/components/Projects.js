@@ -30,7 +30,7 @@ export default function Projects() {
 
     return (
         <div className='project-list flex flex-col gap-4' >
-            <div className="heading text-[#686B6E]">
+            <div className="heading text-[#686B6E] select-none">
                 <h2>Projects</h2>
             </div>
             <div className="project-list text-[#E8E9E9]" style={{ maxHeight: '300px', overflowY: 'auto' }}>

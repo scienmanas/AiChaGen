@@ -1,7 +1,5 @@
 # AiChaGen
 
-## Description
-
 This is a frontend of a chatbot that takes generates the content (text, images, videos) by using aritficial model at the backend and then sends it to the frontend. The frontend is built using React and Tailwind CSS.
 
 ## Installation

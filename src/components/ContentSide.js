@@ -6,16 +6,19 @@ import { MdOutlineFolderOpen } from "react-icons/md";
 import { MdOutlineEdit } from "react-icons/md";
 import { RiShareLine } from "react-icons/ri";
 import currentIndicator from '../assets/icons/current_indicator.png';
+import avatar from '../assets/users/man.png';
 
 export default function ContentSide() {
+
+  const [currentUsers, setCurrentUsers] = useState([
+    'Harry', 'Jack', 'Gamma', 'Alpha', 'Knight'
+  ])
 
   const project = [
     "Orbital Oddysey", "Marketting Campaign for a new TV series Launch"
   ]
 
-  const shared = [
 
-  ]
 
   const [currentTool, setCurrentTool] = useState("artificium")
 
@@ -36,8 +39,20 @@ export default function ContentSide() {
           </div>
         </div>
         <div className="share-actions text-white flex flex-row gap-7 items-center">
-          <div className="people">
+          <div className="people select-none items-center flex flex-row">
+            {currentUsers.slice(0, 3).map((user, index) => (
+              <div className="user -ml-3 rounded-full border-2 border-gray-700 cursor-pointer" key={index}>
+                <img src={avatar} alt="" className="w-8 h-8 rounded-full" />
+              </div>
+            ))}
+            {currentUsers.length > 3 && (
+              <div className="user" key="remaining">
+                <div className="bg-[#1a1d21] flex justify-center items-center text-center border-2 border-gray-700 -ml-3  w-9 h-9 text-gray-500 rounded-full cursor-pointer">
+                  +{currentUsers.length - 3}
+                </div>
+              </div>
 
+            )}
           </div>
           <div className="share-button text-[#686B6E] flex flex-row cursor-pointer items-center gap-2">
             <div className="svg">
@@ -65,7 +80,7 @@ export default function ContentSide() {
               Artificium
             </div>
           </div>
-          <div className={`current-indicator ${currentTool === 'artificium'?'visible' : 'invisible'}`}>
+          <div className={`current-indicator ${currentTool === 'artificium' ? 'visible' : 'invisible'}`}>
             <img
               src={currentIndicator}
               alt=""
@@ -85,7 +100,7 @@ export default function ContentSide() {
               Chat
             </div>
           </div>
-          <div className={`current-indicator ${currentTool === 'chat'?'visible' : 'invisible'}`}>
+          <div className={`current-indicator ${currentTool === 'chat' ? 'visible' : 'invisible'}`}>
             <img
               src={currentIndicator}
               alt=""
@@ -105,7 +120,7 @@ export default function ContentSide() {
               Library
             </div>
           </div>
-          <div className={`current-indicator ${currentTool === 'library'?'visible' : 'invisible'}`}>
+          <div className={`current-indicator ${currentTool === 'library' ? 'visible' : 'invisible'}`}>
             <img
               src={currentIndicator}
               alt=""
