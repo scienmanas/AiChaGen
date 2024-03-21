@@ -8,7 +8,7 @@ import { RiShareLine } from "react-icons/ri";
 import currentIndicator from '../assets/icons/current_indicator.png';
 import avatar from '../assets/users/man.png';
 
-export default function ContentSide() {
+export default function ContentSide(props) {
 
   const [currentUsers, setCurrentUsers] = useState([
     'Harry', 'Jack', 'Gamma', 'Alpha', 'Knight'
@@ -54,7 +54,10 @@ export default function ContentSide() {
 
             )}
           </div>
-          <div className="share-button text-[#686B6E] flex flex-row cursor-pointer items-center gap-2">
+          <div
+            onClick={props.handleShare}
+            className="share-button text-[#686B6E] flex flex-row cursor-pointer items-center gap-2 group"
+          >
             <div className="svg">
               <RiShareLine />
             </div>
@@ -62,7 +65,10 @@ export default function ContentSide() {
               Share
             </div>
           </div>
-          <div className="edit-option bg-[#1e2125] py-[18px] px-[16px] rounded-lg cursor-pointer text-lg">
+          <div
+            onClick={props.handleShare}
+            className="edit-option bg-[#1e2125] py-[18px] px-[16px] rounded-lg cursor-pointer text-lg"
+          >
             <MdOutlineEdit />
           </div>
         </div>
